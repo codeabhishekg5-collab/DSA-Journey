@@ -1,0 +1,26 @@
+//Given a number positive number n, find the value of f0 + f1 + f2 +... + fN where fi indicates ith Fibonacci number. Remember that f0 = 0, f1 = 1, f2 = 1, f3 = 2, f4 = 3, f5 = 5,
+//Since the answer can be very large, the answer takes modulo with 1000000007 and returned.
+//Examples:
+
+//Input: n = 3
+//Output: 4
+//Explanation: 0 + 1 + 1 + 2  = 4
+//Input: n = 4
+//Output: 7
+//Explanation: 0 + 1 + 1 + 2 + 3 = 7
+//Constraints:
+//1 ≤ n ≤ 100000
+
+public class Solution {
+    public int fibSum(int n) {
+        int[] arr = new int[1000] ;
+        arr[0]= 0;
+        arr[1] = 1;
+        int sum = 1;
+        for(int i = 2; i <= n; i++){
+            arr[i] = arr[i - 1] + arr[i - 2];
+            sum += arr[i];
+        }
+        return sum % 1000000007 ;
+    }
+}
