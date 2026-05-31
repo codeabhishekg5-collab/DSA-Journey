@@ -59,14 +59,6 @@ Each folder contains solutions categorized by topic or problem type.
 * C#
 ---
 
-## 📈 Progress Tracker
-
-| Month    | Progress   |
-| -------- | ---------- |
-| May 2026 | Started 🚀 |
-
----
-
 ## 🌟 Why This Repository?
 
 The purpose of this repository is to:
