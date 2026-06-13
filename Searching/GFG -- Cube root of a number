@@ -1,0 +1,52 @@
+/// <summary>
+/// Cube root of a number
+//        Difficulty: BasicAccuracy: 51.7%Submissions: 28K+Points: 1
+//Given a number n, find the cube root of n.
+
+//Note: We need to print the floor value of the result.
+
+//Examples:
+
+//Input: n = 3
+//Output: 1
+//Explanation: Cube root of 3 is 1.442 = 1
+//Input: n = 8
+//Output: 2
+//Explanation: Cube root of 8 is 2
+//Constraints:
+//1 <= n <= 105
+
+//Expected Complexities
+/// </summary>
+class Solution
+{
+    // Complete this function
+    public int cubeRoot(int n)
+    {
+        // Your code here
+        int start = 0, end = n, mid, ans = 0;
+        if (n == 0)
+            return 0;
+        if (n == 1)
+            return 1;
+
+        while (start <= end)
+        {
+            mid = start + (end - start) / 2;
+            if (mid == n / (mid * mid))
+            {
+                return mid;
+            }
+            else if (mid < n / (mid * mid))
+            {
+                ans = mid;
+                start = mid + 1;
+            }
+            else
+            {
+                end = mid - 1;
+            }
+        }
+        return ans;
+    }
+}
