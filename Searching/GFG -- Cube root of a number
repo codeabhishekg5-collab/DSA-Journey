@@ -1,8 +1,7 @@
 /// <summary>
 /// Cube root of a number
-//        Difficulty: BasicAccuracy: 51.7%Submissions: 28K+Points: 1
+//Difficulty: BasicAccuracy: 51.7%Submissions: 28K+Points: 1
 //Given a number n, find the cube root of n.
-
 //Note: We need to print the floor value of the result.
 
 //Examples:
