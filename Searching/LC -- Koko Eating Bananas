@@ -37,6 +37,7 @@
 //piles.length <= h <= 109
 //1 <= piles[i] <= 109
 /// </summary>
+
 public class Solution
 {
     public int MinEatingSpeed(int[] piles, int h)
@@ -79,6 +80,7 @@ public class Solution
             }
 
         }
+
         return ans;
     }
 }
